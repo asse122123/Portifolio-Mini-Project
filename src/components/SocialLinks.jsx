@@ -1,20 +1,20 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+// import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const SocialLinks = () => {
   const links = [
-    {
-      id: 1,
-      child: (
-        <>
-          LinkedIn <FaLinkedin size={30} />
-        </>
-      ),
-      href: "https://linkedin.com",
-      style: "rounded-tr-md",
-    },
+    // {
+    //   id: 1,
+    //   child: (
+    //     <>
+    //       LinkedIn <FaLinkedin size={30} />
+    //     </>
+    //   ),
+    //   href: "https://linkedin.com",
+    //   style: "rounded-tr-md",
+    // },
     {
       id: 2,
       child: (
@@ -22,7 +22,7 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/theyashpatel",
+      href: "https://github.com/asse122123",
     },
     {
       id: 3,
@@ -31,25 +31,25 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "assefademelash122123@gmail.com",
     },
-    {
-      id: 4,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      href: "/resume.pdf",
-      style: "rounded-br-md",
-      download: true,
-    },
+    // {
+    //   id: 4,
+    //   child: (
+    //     <>
+    //       Resume <BsFillPersonLinesFill size={30} />
+    //     </>
+    //   ),
+    //   href: "/resume.pdf",
+    //   style: "rounded-br-md",
+    //   download: true,
+    // },
   ];
 
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({ id, bh, href, style, download }) => (
+        {links.map(({ id,child, bh, href, style, download }) => (
           <li
             key={id}
             className={
